@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url();
+    background-position: center;
+    background-size: cover;
+}
+header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background: transparent;
+    z-index: 1;
+}
+header .container {
+    margin: 0 auto;
+    padding: 0 50px;
+    height: 60px;
+    width: 100%;
+}
+a {
+    color: rgb(4, 4, 4);
+    text-decoration: underline;
+}
+a:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(84, 74, 194);
+}
+.logo {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.logo .image {
+    height: 50px;
+    width: 50px;
+    padding: 2px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.logo .paragraph {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.2em;
+    font-weight: 600;
+    cursor: default;
+    color: rgb(0, 0, 0);
+    margin-left: 4px;
+}
+ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+li {
+    font-size: 20px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px;
+}
+.main {
+    height: 90vh;
+    width: 100%;
+    position: absolute;
+}
+.main img {
+    display: block;
+    margin: auto;
+    height: 110%;
+    filter: drop-shadow(30px 30px 40px rgb(3, 3, 3));
+}
+.contents {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.contents .container {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 260px;
+    margin: auto;
+    height: 100%;
+}
+.todo {
+    cursor: url("paint-brush.png")6 19, auto;
+    display: flex;
+    padding: 14px;
+}
+.values {
+    border: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    outline: none;
+    font-weight: bold;
+    flex-grow: 1;
+    cursor: inherit;
+    background: transparent;
+    border-bottom: 2px solid rgb(41, 38, 38);
+    font-size: 15px;
+    -webkit-text-fill-color: rgb(0, 0, 0);
+}
+.checkbox {
+    cursor: inherit;
+}
+.todo:has(.checkbox:checked) {
+    text-decoration: line-through 2px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(203, 74, 74);
+}
